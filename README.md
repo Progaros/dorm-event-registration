@@ -1,7 +1,7 @@
 # dorm-event-registration
 easily reusable template for event registrations
 ## Settings
-`config.php`
+[`config.php`](config.php)
 - registrationCloseDate: (date) //empty means closed | on that date at 00:00 registration will be closed
 - roomnumberNeeded (bool)
 - headline (string)
