@@ -7,7 +7,9 @@ easily reusable template for event registrations
 - headline (string)
 - important (string) //multiline support | optional
 - tldr (string)  //multiline support | optional
-- text (string)  //multiline support
+- text (string)  //multiline support  
+  
+multiline support = Inserts HTML line breaks before all newlines in a string (PHP nl2br)
 ## Setup
 1. move to new folder
 1. create writable registrations.txt
