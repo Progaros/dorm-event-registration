@@ -22,8 +22,9 @@ $germanTextFix = array(
     "registrationClosed" => "Die Anmeldung ist geschlossen!",
     "tldr" => "tl;dr:",
     "registrations" => "Anmeldungen",
-    "dataprivacy" => "Datenschutzerklärung",
+    "github" => "GitHub",
     "imprint" => "Impressum",
+    "dataprivacy" => "Datenschutzerklärung",
 );
 $englishTextFix = array(
     "linkOtherLanguage" => ".",
@@ -44,8 +45,9 @@ $englishTextFix = array(
     "registrationClosed" => "Registration closed!",
     "tldr" => "tl;dr:",
     "registrations" => "registrations",
-    "dataprivacy" => "Data protection",
+    "github" => "GitHub",
     "imprint" => "Imprint",
+    "dataprivacy" => "Data protection",
 );
 
 // Language selection** //
@@ -84,14 +86,31 @@ if ($debug) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- **Bootstrap CSS -->
 
+    <!-- Custom CSS** -->
+    <style>
+        body{
+            margin: 20px;
+        }
+        .linkOtherLanguage{
+            float: right;
+        }
+        .footer-link{
+            text-decoration: none;
+        }
+        .footer-link:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <!-- **Custom CSS -->
+
     <!-- Title** -->
     <title><?= $textVariable["headline"]; ?></title>
     <!-- **Title -->
 </head>
 
-<body style="margin: 20px;">
+<body>
     <!-- language select** -->
-    <a href="<?= $textFix["linkOtherLanguage"]; ?>" style="float: right;">
+    <a href="<?= $textFix["linkOtherLanguage"]; ?>" class="linkOtherLanguage">
         <button type="button" class="btn btn-light"> <?= $textFix["languageSelect"]; ?></button>
     </a>
     <!-- **language select -->
@@ -244,11 +263,15 @@ if ($debug) {
 
             <!-- Legal** -->
             <p class="text-center text-muted">
-                <a href="/apian/imprint.html" class="link-secondary">
+                <a href="https://github.com/Progaros/dorm-event-registration" class="link-secondary footer-link">
+                    <?= $textFix["github"]; ?>
+                </a>
+                <span>&nbsp;|&nbsp;</span>
+                <a href="/apian/imprint.html" class="link-secondary footer-link">
                     <?= $textFix["imprint"]; ?>
                 </a>
                 <span>&nbsp;|&nbsp;</span>
-                <a href="/apian/dataprivacy.html" class="link-secondary">
+                <a href="/apian/dataprivacy.html" class="link-secondary footer-link">
                     <?= $textFix["dataprivacy"]; ?>
                 </a>
             </p>
