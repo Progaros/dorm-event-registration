@@ -7,9 +7,9 @@ $config = array(
 
 $germanTextVariable = array(
     "headline" => "Überschrift",
-    "important" => "Wichtiger Hinweis", //multiline support
+    "important" => "Wichtiger Hinweis", //multiline support | optional
     "tldr" => "tldr",                   //multiline support | optional
-    "text" => "Deutsch Text. Deutsch",  //multiline support | optional
+    "text" => "Deutsch Text. Deutsch",  //multiline support
 );
 
 $englishTextVariable = array(
